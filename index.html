@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JEE Colleges Finder</title>
+        <link rel="stylesheet" href="./style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="/js/store-data.js"></script>
+    </head>
+    <body>
+        <nav>
+           <a href="">
+               JEE College Locator
+           </a> 
+        </nav>
+        <div class="title">College Locator</div>  
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter zip">
+                <i class="fas fa-search" onclick="searchStores()" ></i>
+            </div>
+        </div> 
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                <div class="store-info">
+                    <div class="address">
+                    <span> IIIT Allahabad</span>
+                           <span>Jhalwa, Prayagraj, Uttar Pradesh 211015</span>
+                    </div>
+                    <div class="phone-number">0532 292 2067</div>
+                </div>
+                    <div class="store-number-container">
+                        <div class="store-number">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="map"></div>
+    <script src="/js/index.js"> </script>    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4rH1Hy7HfaIJ0JqwZLpyTRTq0atoniNc&callback=initMap"
+    async defer></script>
+    </body>
+</html>

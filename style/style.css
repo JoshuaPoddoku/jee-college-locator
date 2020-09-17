@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    height: 100vh;
+}
+
+nav{
+    padding: 20px;
+}
+
+.title{
+    z-index: 100;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(254, 255, 255);
+}
+
+.search-container{
+    z-index: 100;   
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    background-color: #454E53;
+    top: 200px;
+    left: 100px;
+    border-radius: 30px;
+}
+
+.search{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search input{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    padding-left: 20px;
+    color: white;
+    border: none;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search i{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.stores-list-container{
+    z-index: 100;
+    width: 400px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    border-radius: 30px;
+    bottom: 20px;
+    opacity: 0.8;
+}
+
+.stores-list{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.address{
+    line-height: 27px;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.address span{
+    display: block;
+}
+
+.phone-number{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #B5ADAD;   
+}
+
+.store-container{   
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid #979797;
+}
+
+.store-info{
+    flex-grow: 1;
+}
+
+.store-number-container{
+    margin-top: 40px;
+}
+
+
+.store-number{
+    background-color: #454E53;
+    color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.store-info-window{
+    min-width: 300px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.store-info-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.87);
+}
+
+.store-info-status{
+    margin-top: 6px;
+    border-bottom: 1px solid #00000029;
+    padding-bottom: 6px;
+}
+
+.store-info-address, .store-info-phone, .store-info-website{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.store-info-address .circle, .store-info-phone .circle, .store-info-website .circle{
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.store-container-background{
+    display: flex;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    transition: background 0.2 ease-in-out;
+}
+
+.store-container-background:hover{
+    background-color: #ccc;
+}
+
+/*scroll bar styling */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    scroll-margin: 50px 0 0 50px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #444242; 
+  }
