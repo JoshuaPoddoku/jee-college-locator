@@ -113,7 +113,7 @@ function searchStores() {
     var zipCode = document.getElementById('zip-code-input').value;
     if(zipCode){
         stores.forEach(function(store){
-            var postal = store.address.postalCode.substring(0,5);
+            var postal = store.city.substring(0,5);
             if(postal == zipCode){
                 foundStores.push(store);
             }
